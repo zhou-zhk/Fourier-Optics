@@ -7,3 +7,10 @@ y = linspace(-l/2, l/2, N);
 [X,Y] = meshgrid(x,y);
 
 u = exp(-(X.^2 + Y.^2)/(2*(0.01)^2));  % intensity of the optical field
+U = fftshift(fft2(u));  % Fourier transform 
+
+% coordinates of frequency domain
+dx = x(2) - x(1);
+fx = linspace(-1/(2*dx), 1/(2*dx), N);
+[Fx, Fy] = meshgrid(fx, fx);
+
