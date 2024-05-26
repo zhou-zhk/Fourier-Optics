@@ -25,7 +25,7 @@ phmask=[0.5*ph1 0*ph3;ph2 1.5*ph4];
 figure;
 imagesc(phmask);
 
-f=20000;   % focus 20000mm=20m
+f=20000;   % focus length 20000mm=20m
 T=pi/lambda/(f)*(Y.^2+X.^2); % lens phase
 U=U0.*exp(-1i*phmask);
 out=diffraction_tool(lambda,U.*exp(-1i*T),x,H,f);  % use the function of diffraction tool 
@@ -33,9 +33,9 @@ I=abs(out).^2;
 
 % The remaining code is for plotting/visualisation purposes only
 figure
-imagesc([-5,5],[-5,5],I)
+imagesc([-5,5],[-5,5],I);
 figure
-imagesc([-5,5],[-5,5],angle(out))
+imagesc([-5,5],[-5,5],angle(out));
 
 figure
 imagesc([-1,1],[-1,1],I(401:601,401:601))
