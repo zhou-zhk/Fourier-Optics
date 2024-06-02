@@ -1,5 +1,5 @@
 wavelength = 800e-9;                          % the wavelength of the optical field
-l = 0.16;                                     % size of image plane
+l = 0.16;                                     % the size of image plane
 N = 2001;                                     % the pixle number which should be odd instead of even because of the Fourier algorithm
 
 x = linspace(-l/2, l/2, N);
