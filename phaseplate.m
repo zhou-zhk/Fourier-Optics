@@ -14,7 +14,7 @@ w0=0.8*width; % gaussian beam waist
 U0=exp(-r.^2/w0.^2);
 
 figure;
-imagesc(U0);
+imagesc(U0); 
 
 ph1=ones(501)*pi;
 ph2=ones(500,501)*pi;
@@ -23,7 +23,7 @@ ph4=ones(500)*pi;
 phmask=[0.5*ph1 0*ph3;ph2 1.5*ph4];
 
 figure;
-imagesc(phmask);
+imagesc(phmask); % the phase distribution of the phase plate 
 
 f=20000;   % focus length 20000mm=20m
 T=pi/lambda/(f)*(Y.^2+X.^2); % lens phase
@@ -38,6 +38,6 @@ figure
 imagesc([-5,5],[-5,5],angle(out));
 
 figure
-imagesc([-1,1],[-1,1],I(401:601,401:601))
+imagesc([-1,1],[-1,1],I(401:601,401:601)) % central domain of the image
 figure
 imagesc([-1,1],[-1,1],angle(out(401:601,401:601)))
