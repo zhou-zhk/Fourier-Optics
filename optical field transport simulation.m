@@ -1,4 +1,4 @@
-wavelength = 800e-9;                          % the wavelength of the optical field
+wavelength = 800e-9;                          % the wavelength of the optical beam
 l = 0.16;                                     % the size of image plane
 N = 4001;                                     % the pixle number which should be odd instead of even because of the Fourier algorithm
 
@@ -17,7 +17,7 @@ fx = linspace(-1/(2*dx), 1/(2*dx), N);
 D = exp(1i*pi*wavelength*(Fx.^2 + Fy.^2));    % diffraction function
 out = ifft2(ifftshift(U.*D));                 % optical amplitude of image plane
 
-% sketch the results of the Fourier transform of the optical beam
+% sketch the results of the Fourier transform of the optical beam field
 figure;
 title('image plane');
 imagesc(abs(out2).^2);
