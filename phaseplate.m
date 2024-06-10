@@ -1,4 +1,4 @@
-close all;clear;
+close all;clear;clc;
 % parameters
 lambda=266e-6; % 266nm=266e-6mm
 width=10; % 10mm
