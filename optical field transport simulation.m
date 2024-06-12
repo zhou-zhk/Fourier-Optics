@@ -14,7 +14,7 @@ dx = x(2) - x(1);
 fx = linspace(-1/(2*dx), 1/(2*dx), N);
 [Fx, Fy] = meshgrid(fx, fx);
 
-D = exp(1i*pi*wavelength*(Fx.^2 + Fy.^2));    % diffraction function
+D = exp(1i*pi*wavelength*(Fx.^2 + Fy.^2));    % the diffraction function
 out = ifft2(ifftshift(U.*D));                 % optical amplitude of image plane
 
 % sketch the results of the Fourier transform of the optical beam field
