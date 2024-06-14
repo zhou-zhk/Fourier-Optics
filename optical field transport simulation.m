@@ -1,5 +1,5 @@
 close all; clc; clear;
-wavelength = 800e-9;                          % the wavelength of the optical beam
+wavelength = 800e-9;                          % the wavelength of the optical beam, IR beam
 l = 0.16;                                     % the size of image plane
 N = 4001;                                     % the pixle number which should be odd instead of even because of the Fourier algorithm
 
