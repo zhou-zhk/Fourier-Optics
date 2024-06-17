@@ -25,7 +25,7 @@ phmask=[0.5*ph1 0*ph3;ph2 1.5*ph4];
 figure;
 imagesc(phmask); % the phase distribution of the phase plate 
 
-f=20000;   % focus length 20000mm=20m
+f=20000;   % focus length 20000mm=20m, for shorter wavelength about 1-10 nm, the focus distance should be about 0.01-0.1m
 T=pi/lambda/(f)*(Y.^2+X.^2); % lens phase
 U=U0.*exp(-1i*phmask);
 out=diffraction_tool(lambda,U.*exp(-1i*T),x,H,f);  % use the function of diffraction tool 
