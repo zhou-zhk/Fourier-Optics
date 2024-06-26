@@ -38,6 +38,6 @@ figure
 imagesc([-5,5],[-5,5],angle(out));
 
 figure
-imagesc([-1,1],[-1,1],I(401:601,401:601)) % central domain of the image
+imagesc([-1,1],[-1,1],I(401:601,401:601)); % central domain of the image
 figure
-imagesc([-1,1],[-1,1],angle(out(401:601,401:601)))
+imagesc([-1,1],[-1,1],angle(out(401:601,401:601)));
