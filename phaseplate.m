@@ -33,11 +33,11 @@ I=abs(out).^2;
 
 % The remaining code is for plotting/visualisation purposes only
 figure
-imagesc([-5,5],[-5,5],I);
+imagesc([-5,5],[-5,5],I)
 figure
-imagesc([-5,5],[-5,5],angle(out));
+imagesc([-5,5],[-5,5],angle(out))
 
 figure
-imagesc([-1,1],[-1,1],I(401:601,401:601)); % central domain of the image
+imagesc([-1,1],[-1,1],I(401:601,401:601)) % central domain of the image
 figure
-imagesc([-1,1],[-1,1],angle(out(401:601,401:601)));
+imagesc([-1,1],[-1,1],angle(out(401:601,401:601)))
