@@ -19,11 +19,11 @@ D = exp(1i*pi*wavelength*(Fx.^2 + Fy.^2));    % the diffraction function (Fresne
 out = ifft2(ifftshift(U.*D));                 % optical amplitude of image plane
 
 % sketch the results of the Fourier transform of the optical beam field
-figure
+figure;
 title('image plane');
 imagesc(abs(out2).^2);
 colorbar;axis image;
-figure
+figure;
 title('object plane');
 imagesc(u);
 colorbar;axis image;
