@@ -20,10 +20,13 @@ out = ifft2(ifftshift(U.*D));                 % optical amplitude of image plane
 
 % sketch the results of the Fourier transform of the optical beam field
 figure;
-title('image plane');
 imagesc(abs(out2).^2);
-colorbar;axis image;
+title('image plane');
+colorbar; 
+axis image;
+
 figure;
-title('object plane');
 imagesc(u);
-colorbar;axis image;
+title('object plane');
+colorbar;
+axis image;
