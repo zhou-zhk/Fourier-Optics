@@ -1,7 +1,7 @@
 close all; clc; clear;
 wavelength = 800e-9;                          % the wavelength of the optical beam, IR beam
 l = 0.16;                                     % the size of image plane
-N = 2001;                                     % the pixle number which should be odd instead of even because of the Fourier algorithm
+N = 4001;                                     % the pixle number which should be odd instead of even because of the Fourier algorithm
 
 x = linspace(-l/2, l/2, N);
 y = linspace(-l/2, l/2, N);
@@ -24,7 +24,6 @@ imagesc(abs(out2).^2);
 title('image plane');
 colorbar; 
 axis image;
-
 figure;
 imagesc(u);
 title('object plane');
