@@ -3,7 +3,7 @@ close all;clear;clc;
 lambda=266e-6;  % 266nm=266e-6mm
 width=10;  % 10mm
 
-H=1001; % number of pixels, be odd 
+H=4001; % number of pixels, be odd 
 V=H;
 y=linspace(-(width/2),(width/2),V);
 x=linspace(-(width/2),(width/2),H);
