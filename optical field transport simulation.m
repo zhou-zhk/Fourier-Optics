@@ -24,6 +24,7 @@ imagesc(abs(out2).^2);
 title('image plane');
 colorbar; 
 axis image;
+
 figure;
 imagesc(u);
 title('object plane');
