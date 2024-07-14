@@ -1,6 +1,6 @@
 close all;clear;clc;
 % parameters
-lambda=266e-6;  % 266nm=266e-6mm
+lambda=266e-6;  % 266 nm = 266e-6 mm
 width=10;  % 10mm
 
 H=4001; % number of pixels, be odd 
