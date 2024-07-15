@@ -1,4 +1,5 @@
 close all; clc; clear;
+% this file does not utilize the function of fiffraction
 wavelength = 800e-9;                          % the wavelength of the optical beam, IR beam 800nm
 l = 0.16;                                     % the size of image plane, 0.16m 
 N = 4001;                                     % the pixle number which should be odd instead of even because of the Fourier algorithm
